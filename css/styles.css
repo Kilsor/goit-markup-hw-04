@@ -1,0 +1,378 @@
+:root {
+  --accent-color: #404bbf;
+  --primary-text: #2e2f42;
+  --secondary-text-color: #434455;
+  --primary-text-color-light: #ffffff;
+  --button-color: #4d5ae5;
+  --background-color: #2e2f42;
+  --background-color-secondary: #f4f4fd;
+  --footer-text-color: #e7e9fc;
+  --footer-logo-color: #f4f4fd;
+}
+
+/* Скидання маркування списків */
+.list {
+  list-style: none;
+}
+
+/* Скидання підчеркувань посилань */
+.link {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: var(--primary-text);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul {
+  padding-left: 0;
+  margin: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  display: block;
+}
+
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* ================================ COMPONENTS ================================ */
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.list-title {
+  color: var(--primary-text);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+.list-description {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.logo-style {
+  color: var(--accent-color);
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ================================ /COMPONENTS ================================ */
+
+/* ================================== HEADER ================================== */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu {
+  display: flex;
+  gap: 40px;
+}
+
+.header-contacts-list {
+  display: flex;
+  gap: 40px;
+}
+
+/* Логотип */
+.header-logo {
+  margin-right: 76px;
+  color: var(--primary-text);
+}
+
+/* Головне меню */
+.header-menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--accent-color);
+}
+
+/* Контактна інформація */
+
+.header-contacts-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+
+/* ================================== /HEADER ================================== */
+
+/* ==================================== HERO ==================================== */
+
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+  background-color: var(--background-color);
+}
+/* Заставка */
+
+.hero-title {
+  max-width: 496px;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color-light);
+}
+
+.hero-btn {
+  display: block;
+  margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  margin-top: 48px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-text-color-light);
+
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 4px;
+
+  cursor: pointer;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background: var(--accent-color);
+}
+/* ================================== /HERO ================================== */
+
+/* ================================== OUR TEAM ================================== */
+
+.team {
+  background: var(--background-color-secondary);
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.team-list-text {
+  padding: 32px 16px 32px 16px;
+  text-align: center;
+}
+
+.team-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+  background: var(--primary-text-color-light);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+}
+
+/* ================================== /OUR TEAM ================================== */
+
+/* ================================== ABOUT ================================== */
+
+.about {
+  padding-bottom: 60px;
+}
+
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.about-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+}
+/* ================================== /ABOUT ================================== */
+
+/* ================================== WORKS ================================== */
+
+.works {
+  padding-top: 60px;
+}
+
+.works-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.work-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+}
+
+.works-title {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+/* ================================== /WORKS ================================== */
+
+/* ================================== PORTFOLIO ================================== */
+
+.catalog {
+  padding-top: 96px;
+}
+
+.catalog-filter-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--button-color);
+  background: var(--background-color-secondary);
+  border: 1px solid var(--footer-text-color);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 12px 24px;
+}
+
+.catalog-filter-btn:hover,
+.catalog-filter-btn:focus {
+  color: var(--primary-text-color-light);
+  background: var(--accent-color);
+}
+
+.catalog-filter {
+  text-align: center;
+  display: flex;
+  gap: 24px;
+  margin-bottom: 72px;
+  justify-content: center;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.catalog-list-item {
+  flex-basis: calc((100% - 48px) / 3);
+  background: var(--primary-text-color-light);
+}
+
+.catalog-list-text {
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  padding: 32px 16px 32px 16px;
+}
+
+/* ================================== /PORTFOLIO================================== */
+
+/* ================================== FOOTER ================================== */
+/* Стилі підвалу */
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: var(--background-color);
+}
+
+.footer-logo {
+  color: var(--footer-logo-color);
+}
+
+.footer-description {
+  margin-top: 16px;
+  max-width: 264px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--footer-text-color);
+}
+/* ================================== /FOOTER ================================== */
